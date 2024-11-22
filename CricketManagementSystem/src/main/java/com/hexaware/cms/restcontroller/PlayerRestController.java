@@ -52,4 +52,9 @@ public class PlayerRestController {
 		return service.deletePlayerById(playerId);
 	}
 	
+	@DeleteMapping("delete/player/name/{playerName}")
+	private String deletePlayerByName(@PathVariable String playerName) {
+		return service.deletePlayerByname(playerName);
+	}
+	
 }

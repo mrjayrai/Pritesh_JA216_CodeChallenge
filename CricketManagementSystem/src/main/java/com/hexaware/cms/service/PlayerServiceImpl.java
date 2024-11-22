@@ -85,5 +85,13 @@ public class PlayerServiceImpl implements IPlayerService {
 		}
 	}
 
+	@Override
+	public String deletePlayerByname(String playerName) {
+		// TODO Auto-generated method stub
+		repository.deleteplayerByName(playerName);
+		return "Player Deleted Successfully";
+	}
+
+	
 	
 }

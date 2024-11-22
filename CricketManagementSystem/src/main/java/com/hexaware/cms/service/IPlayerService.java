@@ -17,4 +17,6 @@ public interface IPlayerService {
 	Player updatePlayer(PlayerDTO player);
 	
 	String deletePlayerById(int playerId);
+	
+	String deletePlayerByname(String playerName);
 }
